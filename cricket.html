@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Match</title>
+    <style>
+        .field{
+            border: 4px solid green;
+        }
+        /* .bat:hover{
+            transform: rotate(-60deg);
+            transform-origin: top right;
+        } puro screen e mouse move korlei hover hobe.tai bat class e hover na diye field cls e dibo kintu filed e hover dile puro move korbe tai, tai field cls er majhe bat cls e hover hobe as below
+        */
+        .field:hover .bat{
+            transform: rotate(-60deg);
+            transform-origin: top right;
+        }
+        .bat{
+            transition: transform 0.1s ease-in;
+        }
+        .ball{
+            width: 30px;
+            height: 30px;
+            border-radius: 15px;
+            background-color: red;
+            position: relative;
+            left: 300px;
+            transition: transform 1s ease-out 0.145s;
+        }
+        .field:hover .ball{
+            transform: translate(500px, -150px);
+        }
+    </style>
+</head>
+<body>
+    <div class="field">
+        <img class="bat" src="media/images.jpg" alt="">
+        <div class="ball">
+
+        </div>
+    </div>
+</body>
+</html>
